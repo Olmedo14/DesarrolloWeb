@@ -1,0 +1,238 @@
+/* VARIABLES */
+$fuente-principal: 'Montserrat', sans-serif;
+$fuente-secundaria: 'Poppins', sans-serif;
+$fuente-decorativa: 'Satisfy', cursive;
+
+$color-fondo: #ffffff;
+$color-header: linear-gradient(to bottom, #82ccd5, #ffffff);
+$color-footer: linear-gradient(to top, #82ccd5, #ffffff);
+$color-borde: #000000;
+$radio-borde: 5px;
+$transicion-efecto: 0.4s;
+
+/* FUENTES */
+@font-face {
+    font-family: "MontSerrat";
+    src: url("../Assets/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../Assets/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Satisfy";
+    src: url("../Assets/Satisfy/Satisfy-Regular.ttf");
+}
+
+/* MIXINS */
+@mixin borde-redondeado($radio: 5px) {
+  border-radius: $radio;
+}
+
+@mixin transicion($propiedad, $tiempo: 0.4s) {
+  transition: $propiedad $tiempo;
+}
+
+@mixin escala-hover($escala: 1.1, $tiempo: 0.4s) {
+  &:hover {
+    transform: scale($escala);
+    @include transicion(transform, $tiempo);
+  }
+}
+
+/* ESTILOS BASE */
+
+/* FONDO */
+header {
+    background: $color-header;
+    outline: 2px solid $color-borde;
+    @include borde-redondeado(5px);
+}
+
+body {
+    overflow-x: hidden;
+    background: $color-fondo;
+    @include borde-redondeado(7px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid $color-borde;
+}
+
+footer {
+    background: $color-footer;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    position: absolute;
+    display: flex;
+    height: 69px;
+    flex-direction: row;
+}
+
+.encabezado h1 {
+    font-size: 26px;
+    width: 107px;
+    height: 60px;
+    margin-top: 3px;
+    margin-left: -29px;
+    font-family: $fuente-secundaria;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.encabezado img {
+    height: 70px;
+    padding: 6px;
+}
+
+/* CARRITO */
+.carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 69px;
+}
+
+.carrito img {
+    height: 65px;
+    padding: 12px 20px 12px 12px;
+    @include escala-hover(1.1, 0.4s);
+}
+
+.carrito .inicio-sesion-logo {
+    height: 68px;
+    padding: 12px 5px 12px 12px;
+}
+
+/* ICONO DE WSP */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    @include escala-hover(1.1, 0.3s);
+}
+
+/* FOOTER */
+.pie-pagina-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 50px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.pie-pagina-2 a {
+    padding: 8px;
+    margin-right: 11%;
+}
+
+.pie-pagina-2 img {
+    width: 40px;
+    height: 40px;
+    @include escala-hover(1.1, 0.4s);
+}
+
+.pie-pagina-T {
+    padding: 10px 0px 0px 0px;
+    font-family: $fuente-principal;
+    font-weight: 500;
+    margin-right: 118px;
+    font-size: 25px;
+}
+
+.byc {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    font-family: $fuente-principal;
+    font-weight: 500;
+    width: 100%;
+    font-size: 15px;
+    margin: 4px;
+    @include escala-hover(1.1, 0.4s);
+}
+
+.pie-pagina-1 {
+    display: inline-block;
+    position: absolute;
+}
+
+.pie-pagina-1 h2 {
+    padding: 10px 0px 0px 0px;
+    font-family: $fuente-principal;
+    font-weight: 500;
+    margin-left: 95px;
+    font-size: 25px;
+}
+
+.pie-pagina-nav {
+    margin-left: 48px;
+}
+
+.pie-pagina-nav li {
+    margin: 7px;
+    list-style-type: none;
+    font-family: $fuente-principal;
+}
+
+.pie-pagina-nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.pie-pagina-nav li:hover {
+    @include escala-hover(1.1, 0.4s);
+}
+
+/* MENU DE NAVEGACION BOOTSTRAP */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.navbar-brand img {
+    max-height: 40px;
+    margin-right: -10px;
+    margin-left: -30px;
+}
+
+.navbar-brand h1 {
+    font-size: 40px;
+}
+
+.bg-light {
+    background: $color-header;
+    outline: 2px solid $color-borde;
+    @include borde-redondeado(5px);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 19px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    @include escala-hover(1.1, 0.4s);
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+    color: black;
+}
