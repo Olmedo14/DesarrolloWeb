@@ -1,0 +1,247 @@
+/* ------- */
+/* APARTADO DE ABOUT US */
+/* ------- */
+
+.nosotros-index-main2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 45px;
+  }
+  
+  .nosotros-index-main1 {
+    width: 60%;
+    @include box-shadow(0px, 1px, 20px, -1px, gray);
+    margin-top: 50px;
+    @include borde-redondeado(10px);
+  }
+  
+  .nosotros-index-main1 h2 {
+    text-align: center;
+    width: 100%;
+    padding-top: 17px;
+  }
+  
+  .nosotros-index {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .nosotros-index img {
+    width: 350px;
+    height: 350px;
+    @include borde-redondeado(5px);
+  }
+  
+  .nosotros-index p {
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 40px;
+    height: 270px;
+    margin-bottom: 0;
+  }
+  
+  .nosotros-index button {
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 14px;
+    height: 50px;
+    width: 125px;
+    align-self: end;
+    position: absolute;
+    @include borde-redondeado(7px);
+    right: 303px;
+    color: #fff;
+    background-color: $color-secundario-regis;
+    border-color: $color-secundario-regis;
+    margin: 5px;
+    @include transicion(transform, $transicion-efecto);
+  }
+  
+  .nosotros-index button:hover {
+    transform: scale(1.1) translateX(10px);
+  }
+  
+  /* ------- */
+  /* SECCION "QUIENES SOMOS" */
+  /* ------- */
+  
+  .seccion-quienes-somos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: $color-fondo;
+  }
+  
+  .titulo-seccion {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: $color-secundario-regis;
+    font-family: $fuente-secundaria;
+  }
+  
+  .subtitulo {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #6c757d;
+    font-family: $fuente-secundaria;
+  }
+  
+  .contenido-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .texto-seccion {
+    flex: 1 1 50%;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .texto-seccion p {
+    font-family: $fuente-principal;
+    font-weight: 400;
+  }
+  
+  .imagen-seccion img {
+    height: 300px;
+    @include borde-redondeado(8px);
+    @include box-shadow(0px, 4px, 15px, rgba(0, 0, 0, 0.2));
+  }
+  
+  /* ------- */
+  /* SECCION "POR QUÉ ELEGIR NUESTROS PRODUCTOS" */
+  /* ------- */
+  
+  .seccion-destacados {
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+  }
+  
+  .titulo-destacados {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #343a40;
+    font-family: $fuente-secundaria;
+  }
+  
+  .contenedor-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .destacado1,
+  .destacado2,
+  .destacado3 {
+    flex: 1 1 200px;
+    max-width: 300px;
+    background-color: $color-fondo;
+    padding: 10px;
+    @include borde-redondeado(8px);
+    @include box-shadow(0px, 4px, 15px, rgba(0, 0, 0, 0.1));
+  }
+  
+  .destacado1 img,
+  .destacado2 img,
+  .destacado3 img {
+    margin-bottom: 15px;
+  }
+  
+  .destacado1 img {
+    height: 95px;
+    width: 100px;
+  }
+  
+  .destacado2 img {
+    height: 55px;
+    width: 150px;
+  }
+  
+  .destacado3 img {
+    height: 60px;
+    width: 60px;
+    margin-top: 23px;
+  }
+  
+  .destacado1 h4,
+  .destacado2 h4,
+  .destacado3 h4 {
+    font-size: 1.2em;
+    color: $color-secundario-regis;
+    margin-bottom: 10px;
+    font-family: $fuente-secundaria;
+  }
+  
+  .destacado1 p,
+  .destacado2 p,
+  .destacado3 p {
+    font-size: 1em;
+    color: #6c757d;
+    font-family: $fuente-principal;
+    font-weight: 400;
+  }
+  
+  /* ------- */
+  /* APARTADO DE FAQ */
+  /* ------- */
+  
+  .acordeon-main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+  }
+  
+  .acordeon-main img {
+    width: 340px;
+    height: 340px;
+    border-color: #02012c;
+    border-style: inset;
+    @include borde-redondeado(2rem);
+  }
+  
+  .boton-acordeon {
+    background-color: $color-secundario-regis;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    @include borde-redondeado(5px);
+    text-align: left;
+    border: none;
+    box-shadow: none;
+    font-family: $fuente-secundaria;
+    font-size: 25px;
+    @include transicion(background-color, 0.3s);
+  }
+  
+  .boton-acordeon:not(.collapsed) {
+    background-color: $color-secundario-regis;
+  }
+  
+  .boton-acordeon:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .item-acordeon {
+    margin-bottom: 5px;
+  }
+  
+  .cuerpo-acordeon {
+    background-color: #dfe6e9;
+    padding: 15px;
+    border-left: 3px solid $color-secundario-regis;
+    border-right: 3px solid $color-secundario-regis;
+    border-bottom: 3px solid $color-secundario-regis;
+    @include borde-redondeado(0 0 5px 5px);
+    font-family: $fuente-principal;
+    font-weight: 400;
+    width: 614px;
+  }

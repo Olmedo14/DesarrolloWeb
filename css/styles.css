@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* VARIABLES */
 /* FUENTES */
 @font-face {
@@ -35,192 +36,730 @@ footer {
   background: linear-gradient(to top, #82ccd5, #ffffff);
 }
 
-/* ENCABEZADO */
-.encabezado {
-  position: absolute;
+/* CONTENEDORES PRODUCTOS */
+.main-container {
   display: flex;
-  height: 69px;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.encabezado h1 {
-  font-size: 26px;
-  width: 107px;
-  height: 60px;
-  margin-top: 3px;
-  margin-left: -29px;
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* CARDS DE PRODUCTO */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 230px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0px 1px 20px -1px gray;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.product-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.product-image {
+  width: 100%;
+  height: 195px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0 0 15px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.encabezado img {
-  height: 70px;
-  padding: 6px;
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
 }
 
 /* CARRITO */
-.carrito {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  height: 69px;
+.cart {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  text-align: center;
 }
 
-.carrito img {
-  height: 65px;
-  padding: 12px 20px 12px 12px;
+.cart h2 {
+  margin-top: 0;
 }
-.carrito img:hover {
+
+#cartItems {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cartItems li {
+  margin: 5px 0;
+}
+
+/* PRIMERA VISTA */
+.muestra-inicio {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  align-items: center;
+}
+
+.muestra-inicio img {
+  width: 100%;
+  height: 610px;
+  margin: 2px 0 0 0;
+  opacity: 0.89;
+}
+
+.muestra-inicio h2 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  position: absolute;
+  color: #1c346a;
+  font-size: 140px;
+  text-shadow: 7px 6px 12px rgba(0, 0, 0, 0.71);
+  left: 258px;
+  top: 227px;
+  margin: 17px;
+}
+
+.muestra-inicio p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  color: #1c346a;
+  font-size: 27px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.71);
+  right: 60px;
+  top: 407px;
+  letter-spacing: -1px;
+}
+
+/* DESCUBRE TUS PLANTAS */
+.muestras {
+  display: flex;
+  margin: 100px 0;
+  align-items: center;
+}
+
+.muestras h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  width: 50%;
+  margin-left: 40px;
+  text-shadow: 10px 10px 10px #82dae5;
+  color: #000;
+}
+
+.muestras img {
+  height: 145px;
+}
+
+/* BOTONES DE VER MÁS */
+.boton-ver-mas {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  height: 105px;
+  margin-top: -57px;
+}
+
+.boton-ver-mas button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 166px;
+  border-radius: 13px;
+  background: #1c346a;
+  margin: 0 10px;
+  font-size: large;
+  padding: 6px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.boton-ver-mas button:hover {
   transform: scale(1.1);
   transition: transform 0.4s;
 }
 
-.carrito .inicio-sesion-logo {
-  height: 68px;
-  padding: 12px 5px 12px 12px;
+.boton-ver-mas button:hover {
+  background: #4f628d;
 }
 
-/* ICONO DE WSP */
-.whatsapp-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
+/*-------*/
+/* APARTADO DE REGISTRO */
+/*-------*/
+.container-regis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 120px;
 }
 
-.whatsapp-icon img {
-  width: 60px;
+.form-area-regis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #b2c8f9;
+  height: auto;
+  width: auto;
+  border: 2px solid #1c346a;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px #1c346a;
+}
+
+.titulo-regis-1 {
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.titulos-regis {
+  margin: 5px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-group-regis {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 10px;
+}
+
+.regis_style {
+  outline: none;
+  border: 2px solid #1c346a;
+  box-shadow: 3px 4px 0px 1px #1c346a;
+  width: 290px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.boton-regis {
+  padding: 15px;
+  margin: 25px 0px;
+  width: 290px;
+  font-size: 15px;
+  background: #6aefff;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px 1px #1c346a;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+.boton-regis:hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
+
+.text-iniciosesion {
+  font-family: "Poppins", sans-serif;
+}
+
+.link-iniciosesion {
+  font-weight: 900;
+  text-decoration: underline;
+  color: #1c346a;
+}
+.link-iniciosesion:hover {
+  color: #6aefff;
+}
+
+/* ------- */
+/* APARTADO DE ABOUT US */
+/* ------- */
+.nosotros-index-main2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.nosotros-index-main1 {
+  width: 60%;
+  box-shadow: 0px 1px 20px -1px gray;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.nosotros-index-main1 h2 {
+  text-align: center;
+  width: 100%;
+  padding-top: 17px;
+}
+
+.nosotros-index {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nosotros-index img {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.nosotros-index p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-left: 40px;
+  height: 270px;
+  margin-bottom: 0;
+}
+
+.nosotros-index button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 50px;
+  width: 125px;
+  align-self: end;
+  position: absolute;
+  border-radius: 7px;
+  right: 303px;
+  color: #fff;
+  background-color: #1c346a;
+  border-color: #1c346a;
+  margin: 5px;
+  transition: transform 0.4s;
+}
+
+.nosotros-index button:hover {
+  transform: scale(1.1) translateX(10px);
+}
+
+/* ------- */
+/* SECCION "QUIENES SOMOS" */
+/* ------- */
+.seccion-quienes-somos {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.titulo-seccion {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1c346a;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtitulo {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #6c757d;
+  font-family: "Poppins", sans-serif;
+}
+
+.contenido-seccion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.texto-seccion {
+  flex: 1 1 50%;
+  padding: 20px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.texto-seccion p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.imagen-seccion img {
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2) #1c346a;
+}
+
+/* ------- */
+/* SECCION "POR QUÉ ELEGIR NUESTROS PRODUCTOS" */
+/* ------- */
+.seccion-destacados {
+  padding: 50px 20px;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+.titulo-destacados {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #343a40;
+  font-family: "Poppins", sans-serif;
+}
+
+.contenedor-destacados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.destacado1,
+.destacado2,
+.destacado3 {
+  flex: 1 1 200px;
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1) #1c346a;
+}
+
+.destacado1 img,
+.destacado2 img,
+.destacado3 img {
+  margin-bottom: 15px;
+}
+
+.destacado1 img {
+  height: 95px;
+  width: 100px;
+}
+
+.destacado2 img {
+  height: 55px;
+  width: 150px;
+}
+
+.destacado3 img {
   height: 60px;
-  border-radius: 35%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60px;
+  margin-top: 23px;
 }
-.whatsapp-icon img:hover {
+
+.destacado1 h4,
+.destacado2 h4,
+.destacado3 h4 {
+  font-size: 1.2em;
+  color: #1c346a;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.destacado1 p,
+.destacado2 p,
+.destacado3 p {
+  font-size: 1em;
+  color: #6c757d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+/* ------- */
+/* APARTADO DE FAQ */
+/* ------- */
+.acordeon-main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0;
+}
+
+.acordeon-main img {
+  width: 340px;
+  height: 340px;
+  border-color: #02012c;
+  border-style: inset;
+  border-radius: 2rem;
+}
+
+.boton-acordeon {
+  background-color: #1c346a;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  border: none;
+  box-shadow: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  transition: background-color 0.3s;
+}
+
+.boton-acordeon:not(.collapsed) {
+  background-color: #1c346a;
+}
+
+.boton-acordeon:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.item-acordeon {
+  margin-bottom: 5px;
+}
+
+.cuerpo-acordeon {
+  background-color: #dfe6e9;
+  padding: 15px;
+  border-left: 3px solid #1c346a;
+  border-right: 3px solid #1c346a;
+  border-bottom: 3px solid #1c346a;
+  border-radius: 0 0 5px 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 614px;
+}
+
+/*-------*/
+/* SECCION DE "ALGUNO DE NUESTROS PRODUCTOS" */
+/*-------*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main-container h2 {
+  padding: 6px;
+  font-family: "MontSerrat";
+  font-weight: 400;
+  font-style: normal;
+  background: #ffffff;
+  margin-bottom: 40px;
+}
+
+.nuestros-prod {
+  padding: 6px;
+  border-style: solid;
+  border-radius: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 230px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0px 1px 20px -1px gray;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.product-card:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
 
-/* FOOTER */
-.pie-pagina-2 {
-  display: flex;
-  flex-direction: column;
-  text-align: end;
-  margin-right: 50px;
+.product-image {
   width: 100%;
-  align-items: flex-end;
+  height: 195px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
 }
 
-.pie-pagina-2 a {
-  padding: 8px;
-  margin-right: 11%;
+.product-name {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
 }
 
-.pie-pagina-2 img {
-  width: 40px;
-  height: 40px;
-}
-.pie-pagina-2 img:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s;
-}
-
-.pie-pagina-T {
-  padding: 10px 0px 0px 0px;
-  font-family: "Montserrat", sans-serif;
+.product-price {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0 0 15px 0;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  margin-right: 118px;
-  font-size: 25px;
+  font-style: normal;
 }
 
-.byc {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  padding: 10px 0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  width: 100%;
-  font-size: 15px;
-  margin: 4px;
-}
-.byc:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s;
-}
-
-.pie-pagina-1 {
-  display: inline-block;
-  position: absolute;
-}
-
-.pie-pagina-1 h2 {
-  padding: 10px 0px 0px 0px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin-left: 95px;
-  font-size: 25px;
-}
-
-.pie-pagina-nav {
-  margin-left: 48px;
-}
-
-.pie-pagina-nav li {
-  margin: 7px;
-  list-style-type: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-.pie-pagina-nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.pie-pagina-nav li:hover:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s;
-}
-
-/* MENU DE NAVEGACION BOOTSTRAP */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-brand img {
-  max-height: 40px;
-  margin-right: -10px;
-  margin-left: -30px;
-}
-
-.navbar-brand h1 {
-  font-size: 40px;
-}
-
-.bg-light {
-  background: linear-gradient(to bottom, #82ccd5, #ffffff);
-  outline: 2px solid #000000;
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
   border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-  font-size: 19px;
+.add-to-cart-btn:hover {
+  background-color: #218838;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  text-decoration: underline;
-}
-.navbar-light .navbar-nav .nav-link:hover:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s;
+/* SECCION CARRITO DE COMPRAS */
+.cart {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  text-align: center;
 }
 
-.navbar-light .navbar-nav .nav-link:focus {
-  color: black;
+.cart h2 {
+  margin-top: 0;
+}
+
+#cartItems {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cartItems li {
+  margin: 5px 0;
+}
+
+/*-------*/
+/* RESOLUCION RESPONSIVE "NOSOTROS" */
+/*-------*/
+@media (max-width: 425px) {
+  .acordeon-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cuerpo-acordeon {
+    width: 100%;
+  }
+  .pie-pagina-T {
+    margin-right: 10px;
+  }
+  .pie-pagina-1 h2 {
+    margin-left: 10px;
+  }
+  .pie-pagina-nav {
+    margin-left: 0px;
+  }
+  .encabezado {
+    margin-left: -35px;
+  }
+  .encabezado img {
+    margin-left: 5px;
+    width: 115px;
+    height: 65px;
+  }
+  .encabezado h1 {
+    margin-top: 7px;
+    font-size: 22px;
+  }
+  .menu {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .menu a {
+    font-size: 18px;
+  }
+  .carrito img {
+    height: 56px;
+    width: 64px;
+    margin-right: -18px;
+    margin-top: 5px;
+  }
+  .muestra-inicio h2 {
+    text-align: center;
+    font-size: 100px;
+    left: 0px;
+  }
+  .muestra-inicio p {
+    text-align: center;
+    font-size: 17px;
+    left: 0px;
+    top: 481px;
+    width: 100%;
+  }
+  .muestra-inicio img {
+    opacity: 0.65;
+  }
+  .muestras {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .muestras h2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nuestros-prod h2 {
+    text-align: center;
+    padding: 16px;
+    width: 88%;
+  }
+  .nosotros-index-main2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros-index {
+    flex-wrap: wrap;
+  }
+  .nosotros-index img {
+    height: 215px;
+  }
+  .nosotros-index p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .nosotros-index button {
+    right: 140px;
+  }
+  .pasion-nat h3 {
+    margin-top: 20px;
+  }
+  .seccion-beneficios {
+    margin-top: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

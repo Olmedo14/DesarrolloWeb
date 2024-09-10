@@ -1,0 +1,101 @@
+@mixin borde-redondeado($radio: 5px) {
+    border-radius: $radio;
+  }
+  
+  @mixin transicion($propiedad, $tiempo: 0.4s) {
+    transition: $propiedad $tiempo;
+  }
+  
+  @mixin escala-hover($escala: 1.1, $tiempo: 0.4s) {
+    &:hover {
+      transform: scale($escala);
+      @include transicion(transform, $tiempo);
+    }
+  }
+  
+  /* PRIMERA VISTA */
+  .muestra-inicio {
+      display: flex;
+      justify-content: start;
+      width: 100%;
+      align-items: center;
+  }
+  
+  .muestra-inicio img {
+      width: 100%;
+      height: 610px;
+      margin: 2px 0 0 0;
+      opacity: 0.89;
+  }
+  
+  .muestra-inicio h2 {
+      font-family: $fuente-decorativa;
+      font-weight: 400;
+      position: absolute;
+      color: #1c346a;
+      font-size: 140px;
+      text-shadow: 7px 6px 12px rgba(0, 0, 0, 0.71);
+      left: 258px;
+      top: 227px;
+      margin: 17px;
+  }
+  
+  .muestra-inicio p {
+      font-family: $fuente-principal;
+      font-weight: 500;
+      position: absolute;
+      color: #1c346a;
+      font-size: 27px;
+      text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.71);
+      right: 60px;
+      top: 407px;
+      letter-spacing: -1px;
+  }
+  
+  /* DESCUBRE TUS PLANTAS */
+  .muestras {
+      display: flex;
+      margin: 100px 0;
+      align-items: center;
+  }
+  
+  .muestras h2 {
+      font-family: $fuente-secundaria;
+      font-size: 50px;
+      width: 50%;
+      margin-left: 40px;
+      text-shadow: 10px 10px 10px #82dae5;
+      color: #000;
+  }
+  
+  .muestras img {
+      height: 145px;
+  }
+  
+  /* BOTONES DE VER MÁS */
+  .boton-ver-mas {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      height: 105px;
+      margin-top: -57px;
+  }
+  
+  .boton-ver-mas button {
+      font-family: $fuente-principal;
+      font-weight: 400;
+      width: 166px;
+      border-radius: 13px;
+      background: #1c346a;
+      margin: 0 10px;
+      font-size: large;
+      padding: 6px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      @include escala-hover(1.1, 0.4s);
+  }
+  
+  .boton-ver-mas button:hover {
+      background: #4f628d;
+  }

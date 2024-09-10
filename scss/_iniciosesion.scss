@@ -1,0 +1,87 @@
+/*-------*/
+/* APARTADO DE REGISTRO */
+/*-------*/
+
+.container-regis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 120px;
+}
+
+.form-area-regis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-principal-regis;
+    height: auto;
+    width: auto;
+    border: 2px solid $color-secundario-regis;
+    @include borde-redondeado($radio-borde-regis);
+    @include box-shadow;
+}
+
+.titulo-regis-1 {
+    color: $color-borde;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-family: $fuente-secundaria;
+}
+
+.titulos-regis {
+    margin: 5px 0;
+    font-family: $fuente-secundaria;
+}
+
+.form-group-regis {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px;
+}
+
+.regis_style {
+    outline: none;
+    border: 2px solid $color-secundario-regis;
+    @include box-shadow;
+    width: 290px;
+    padding: 12px 10px;
+    @include borde-redondeado(4px);
+    font-size: 15px;
+    font-family: $fuente-principal;
+}
+
+.boton-regis {
+    padding: 15px;
+    margin: 25px 0px;
+    width: 290px;
+    font-size: 15px;
+    background: $color-hover-regis;
+    @include borde-redondeado($radio-boton-regis);
+    font-weight: 800;
+    @include box-shadow(3px, 3px);
+    font-family: $fuente-secundaria;
+    cursor: pointer;
+
+    &:hover {
+        @include escala-hover(1.1);
+    }
+}
+
+.text-iniciosesion {
+    font-family: $fuente-secundaria;
+}
+
+.link-iniciosesion {
+    font-weight: 900;
+    text-decoration: underline;
+    color: $color-secundario-regis;
+
+    &:hover {
+        color: $color-hover-regis;
+    }
+}
