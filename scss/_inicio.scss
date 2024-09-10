@@ -99,3 +99,79 @@
   .boton-ver-mas button:hover {
       background: #4f628d;
   }
+
+  /*-------*/
+/*SECCION DE BENEFICIOS (INICIO)*/
+/*-------*/
+
+
+.seccion-beneficios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 55px;
+    border: 1px solid #ffffff;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.beneficio{
+    text-align: center;
+    max-width: 300px;
+}
+
+.beneficio img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.beneficio h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.beneficio p{
+    font-size: 13px;
+    color: #666;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.divisor{
+    width: 1px;
+    height: 50px;
+    background-color: #eddcd9;
+    margin: 0 20px;
+}
+
+
+/*-------*/
+/*SECCION "TE APASIONA LA NATURALEZA"*/
+/*-------*/
+
+
+.pasion-nat h2{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    text-shadow: 10px 10px 10px #82dae5;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.pasion-nat h3{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 4px;
+}
