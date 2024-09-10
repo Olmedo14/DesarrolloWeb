@@ -100,78 +100,66 @@
       background: #4f628d;
   }
 
-  /*-------*/
-/*SECCION DE BENEFICIOS (INICIO)*/
-/*-------*/
+  /* A CERCA DE NOSOTROS */
 
-
-.seccion-beneficios{
+  .nosotros-index-main2 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 55px;
-    border: 1px solid #ffffff;
-    margin-top: 100px;
-    margin-bottom: 60px;
-}
-
-.beneficio{
+    width: 100%;
+    justify-content: center;
+    margin-top: 45px;
+  }
+  
+  .nosotros-index-main1 {
+    width: 60%;
+    @include box-shadow(0px, 1px, 20px, -1px, gray);
+    margin-top: 50px;
+    @include borde-redondeado(10px);
+  }
+  
+  .nosotros-index-main1 h2 {
     text-align: center;
-    max-width: 300px;
-}
-
-.beneficio img{
-    width: 50px;
+    width: 100%;
+    padding-top: 17px;
+  }
+  
+  .nosotros-index {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .nosotros-index img {
+    width: 350px;
+    height: 350px;
+    @include borde-redondeado(5px);
+  }
+  
+  .nosotros-index p {
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 40px;
+    height: 270px;
+    margin-bottom: 0;
+  }
+  
+  .nosotros-index button {
+    font-family: $fuente-principal;
+    font-weight: 400;
+    font-size: 14px;
     height: 50px;
-    margin: 10px;
-}
-
-.beneficio h3{
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-}
-
-.beneficio p{
-    font-size: 13px;
-    color: #666;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.divisor{
-    width: 1px;
-    height: 50px;
-    background-color: #eddcd9;
-    margin: 0 20px;
-}
-
-
-/*-------*/
-/*SECCION "TE APASIONA LA NATURALEZA"*/
-/*-------*/
-
-
-.pasion-nat h2{
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    text-shadow: 10px 10px 10px #82dae5;
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 4px;
-}
-.pasion-nat h3{
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 4px;
-}
+    width: 125px;
+    align-self: end;
+    position: absolute;
+    @include borde-redondeado(7px);
+    right: 303px;
+    color: #fff;
+    background-color: $color-secundario-regis;
+    border-color: $color-secundario-regis;
+    margin: 5px;
+    @include transicion(transform, $transicion-efecto);
+  }
+  
+  .nosotros-index button:hover {
+    transform: scale(1.1) translateX(10px);
+  }

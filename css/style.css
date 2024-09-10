@@ -128,6 +128,28 @@ footer {
 }
 
 /*-------*/
+/*ICONO DE WSP ABAJO A LA DERECHA*/
+/*-------*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 35%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+/*-------*/
 /*ENCABEZADO*/
 /*-------*/
 .encabezado {
@@ -396,76 +418,67 @@ footer {
   background: #4f628d;
 }
 
-/*-------*/
-/*SECCION DE BENEFICIOS (INICIO)*/
-/*-------*/
-.seccion-beneficios {
+/* A CERCA DE NOSOTROS */
+.nosotros-index-main2 {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 55px;
-  border: 1px solid #ffffff;
-  margin-top: 100px;
-  margin-bottom: 60px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 45px;
 }
 
-.beneficio {
+.nosotros-index-main1 {
+  width: 60%;
+  box-shadow: 0px 1px 20px -1px gray;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.nosotros-index-main1 h2 {
   text-align: center;
-  max-width: 300px;
+  width: 100%;
+  padding-top: 17px;
 }
 
-.beneficio img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+.nosotros-index {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.beneficio h3 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
+.nosotros-index img {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.nosotros-index p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 25px;
+  margin-left: 40px;
+  height: 270px;
+  margin-bottom: 0;
 }
 
-.beneficio p {
-  font-size: 13px;
-  color: #666;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.divisor {
-  width: 1px;
+.nosotros-index button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   height: 50px;
-  background-color: #eddcd9;
-  margin: 0 20px;
+  width: 125px;
+  align-self: end;
+  position: absolute;
+  border-radius: 7px;
+  right: 303px;
+  color: #fff;
+  background-color: #1c346a;
+  border-color: #1c346a;
+  margin: 5px;
+  transition: transform 0.4s;
 }
 
-/*-------*/
-/*SECCION "TE APASIONA LA NATURALEZA"*/
-/*-------*/
-.pasion-nat h2 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  text-shadow: 10px 10px 10px #82dae5;
-  margin-top: 60px;
-  text-align: center;
-  margin-bottom: 4px;
-}
-
-.pasion-nat h3 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 4px;
+.nosotros-index button:hover {
+  transform: scale(1.1) translateX(10px);
 }
 
 /*-------*/
@@ -552,71 +565,6 @@ footer {
 }
 .link-iniciosesion:hover {
   color: #6aefff;
-}
-
-/* ------- */
-/* APARTADO DE ABOUT US */
-/* ------- */
-.nosotros-index-main2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 45px;
-}
-
-.nosotros-index-main1 {
-  width: 60%;
-  box-shadow: 0px 1px 20px -1px gray;
-  margin-top: 50px;
-  border-radius: 10px;
-}
-
-.nosotros-index-main1 h2 {
-  text-align: center;
-  width: 100%;
-  padding-top: 17px;
-}
-
-.nosotros-index {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-.nosotros-index img {
-  width: 350px;
-  height: 350px;
-  border-radius: 5px;
-}
-
-.nosotros-index p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  margin-left: 40px;
-  height: 270px;
-  margin-bottom: 0;
-}
-
-.nosotros-index button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  height: 50px;
-  width: 125px;
-  align-self: end;
-  position: absolute;
-  border-radius: 7px;
-  right: 303px;
-  color: #fff;
-  background-color: #1c346a;
-  border-color: #1c346a;
-  margin: 5px;
-  transition: transform 0.4s;
-}
-
-.nosotros-index button:hover {
-  transform: scale(1.1) translateX(10px);
 }
 
 /* ------- */
