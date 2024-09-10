@@ -1,0 +1,87 @@
+/*-------*/
+/*FOOTER*/
+/*-------*/
+
+
+.pie-pagina-2{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 50px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.pie-pagina-2 a{
+    padding: 8px;
+    margin-right: 11%;
+}
+
+.pie-pagina-2 img{
+    width: 40px;
+    height: 40px;
+}
+.pie-pagina-2 img:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+
+.pie-pagina-T{
+    padding: 10px 0px 0px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-right: 118px;
+    font-size: 25px;
+}
+
+.byc {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #000; 
+    padding: 10px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    font-size: 15px;
+    margin: 4px;
+}
+  
+.byc:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+
+.pie-pagina-1{
+    display: inline-block;
+    position: absolute;
+}
+
+.pie-pagina-1 h2{
+    padding: 10px 0px 0px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-left: 95px;
+    font-size: 25px;
+}
+
+.pie-pagina-nav{
+    margin-left: 48px;
+}
+
+.pie-pagina-nav li{
+    margin: 7px;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+}
+.pie-pagina-1 li:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+
+.pie-pagina-nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
