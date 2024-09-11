@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./Assets/icono.png" type="image/x-icon">
     <title>Jardines Eternos</title>
@@ -64,7 +65,7 @@
         </section>
         <section>
             <div class="main-container">
-                <h2 class="nuestros-prod">Alguno de nuestros Productos</h2>
+                <h2 class="nuestros-prod" data-aos="fade-up-right">Alguno de nuestros Productos</h2>
                 <div class="container">
                     <div class="product-card">
                         <img class="product-image" src="./Assets/1.jpg" alt="Terrario Desértico">
@@ -98,7 +99,7 @@
             <button onclick="window.location.href='http://127.0.0.1:5500/pages/kokedamas.html'">Ver Kokedamas</button>
         </div>
         <section class="nosotros-index-main2">
-            <div class="nosotros-index-main1">
+            <div class="nosotros-index-main1" data-aos="flip-up">
                 <h2>A cerca de nosotros</h2>
                 <div class="nosotros-index">
                     <img src="./Assets/nosotros-index.jfif" alt="Foto de jazmin">
@@ -141,11 +142,11 @@
                 </div>
             </div>
         </section>
-        <div class="boton-ver-mas">
+        <div class="boton-ver-mas" data-aos="zoom-out-up">
             <button onclick="window.location.href='http://127.0.0.1:5500/pages/extras.html'">Ver Mas</button>
         </div>
         <section>
-            <div class="seccion-beneficios">
+            <div class="seccion-beneficios" data-aos="zoom-out">
                 <div class="beneficio">
                   <img src="./Assets/camion-transporte.png" alt="">
                   <h3>ENVIOS A TODO EL PAÍS</h3>
@@ -225,5 +226,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
