@@ -379,8 +379,8 @@ footer {
   font-size: 50px;
   width: 50%;
   margin-left: 40px;
-  text-shadow: 10px 10px 10px #82dae5;
-  color: #000;
+  text-shadow: 10px 10px 10px linear-gradient(to bottom, #82ccd5, #ffffff);
+  color: #000000;
 }
 
 .muestras img {
@@ -405,7 +405,7 @@ footer {
   margin: 0 10px;
   font-size: large;
   padding: 6px;
-  color: white;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -415,7 +415,7 @@ footer {
 }
 
 .boton-ver-mas button:hover {
-  background: #4f628d;
+  background: #274892;
 }
 
 /* A CERCA DE NOSOTROS */
@@ -470,7 +470,7 @@ footer {
   position: absolute;
   border-radius: 7px;
   right: 303px;
-  color: #fff;
+  color: #ffffff;
   background-color: #1c346a;
   border-color: #1c346a;
   margin: 5px;
@@ -481,9 +481,7 @@ footer {
   transform: scale(1.1) translateX(10px);
 }
 
-/*-------*/
-/*SECCION DE BENEFICIOS (INICIO)*/
-/*-------*/
+/* SECCION DE BENEFICIOS */
 .seccion-beneficios {
   display: flex;
   justify-content: space-around;
@@ -509,7 +507,7 @@ footer {
 .beneficio h3 {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -517,10 +515,9 @@ footer {
 
 .beneficio p {
   font-size: 13px;
-  color: #666;
+  color: #1c346a;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
 }
 
 .divisor {
@@ -530,15 +527,13 @@ footer {
   margin: 0 20px;
 }
 
-/*-------*/
-/*SECCION "TE APASIONA LA NATURALEZA"*/
-/*-------*/
+/* SECCION "TE APASIONA LA NATURALEZA" */
 .pasion-nat h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 50px;
-  text-shadow: 10px 10px 10px #82dae5;
+  text-shadow: 10px 10px 10px linear-gradient(to bottom, #82ccd5, #ffffff);
   margin-top: 60px;
   text-align: center;
   margin-bottom: 4px;

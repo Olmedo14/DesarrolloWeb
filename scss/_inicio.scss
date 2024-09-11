@@ -1,238 +1,228 @@
 @mixin borde-redondeado($radio: 5px) {
-    border-radius: $radio;
-  }
-  
-  @mixin transicion($propiedad, $tiempo: 0.4s) {
-    transition: $propiedad $tiempo;
-  }
-  
-  @mixin escala-hover($escala: 1.1, $tiempo: 0.4s) {
-    &:hover {
+  border-radius: $radio;
+}
+
+@mixin transicion($propiedad, $tiempo: 0.4s) {
+  transition: $propiedad $tiempo;
+}
+
+@mixin escala-hover($escala: 1.1, $tiempo: 0.4s) {
+  &:hover {
       transform: scale($escala);
       @include transicion(transform, $tiempo);
-    }
   }
-  
-  /* PRIMERA VISTA */
-  .muestra-inicio {
-      display: flex;
-      justify-content: start;
-      width: 100%;
-      align-items: center;
-  }
-  
-  .muestra-inicio img {
-      width: 100%;
-      height: 610px;
-      margin: 2px 0 0 0;
-      opacity: 0.89;
-  }
-  
-  .muestra-inicio h2 {
-      font-family: $fuente-decorativa;
-      font-weight: 400;
-      position: absolute;
-      color: #1c346a;
-      font-size: 140px;
-      text-shadow: 7px 6px 12px rgba(0, 0, 0, 0.71);
-      left: 258px;
-      top: 227px;
-      margin: 17px;
-  }
-  
-  .muestra-inicio p {
-      font-family: $fuente-principal;
-      font-weight: 500;
-      position: absolute;
-      color: #1c346a;
-      font-size: 27px;
-      text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.71);
-      right: 60px;
-      top: 407px;
-      letter-spacing: -1px;
-  }
-  
-  /* DESCUBRE TUS PLANTAS */
-  .muestras {
-      display: flex;
-      margin: 100px 0;
-      align-items: center;
-  }
-  
-  .muestras h2 {
-      font-family: $fuente-secundaria;
-      font-size: 50px;
-      width: 50%;
-      margin-left: 40px;
-      text-shadow: 10px 10px 10px #82dae5;
-      color: #000;
-  }
-  
-  .muestras img {
-      height: 145px;
-  }
-  
-  /* BOTONES DE VER MÁS */
-  .boton-ver-mas {
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-      height: 105px;
-      margin-top: -57px;
-  }
-  
-  .boton-ver-mas button {
-      font-family: $fuente-principal;
-      font-weight: 400;
-      width: 166px;
-      border-radius: 13px;
-      background: #1c346a;
-      margin: 0 10px;
-      font-size: large;
-      padding: 6px;
-      color: white;
-      border: none;
-      cursor: pointer;
-      @include escala-hover(1.1, 0.4s);
-  }
-  
-  .boton-ver-mas button:hover {
-      background: #4f628d;
-  }
+}
 
-  /* A CERCA DE NOSOTROS */
+/* PRIMERA VISTA */
+.muestra-inicio {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  align-items: center;
+}
 
-  .nosotros-index-main2 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 45px;
-  }
-  
-  .nosotros-index-main1 {
-    width: 60%;
-    @include box-shadow(0px, 1px, 20px, -1px, gray);
-    margin-top: 50px;
-    @include borde-redondeado(10px);
-  }
-  
-  .nosotros-index-main1 h2 {
-    text-align: center;
-    width: 100%;
-    padding-top: 17px;
-  }
-  
-  .nosotros-index {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .nosotros-index img {
-    width: 350px;
-    height: 350px;
-    @include borde-redondeado(5px);
-  }
-  
-  .nosotros-index p {
-    font-family: $fuente-principal;
-    font-weight: 400;
-    font-size: 25px;
-    margin-left: 40px;
-    height: 270px;
-    margin-bottom: 0;
-  }
-  
-  .nosotros-index button {
-    font-family: $fuente-principal;
-    font-weight: 400;
-    font-size: 14px;
-    height: 50px;
-    width: 125px;
-    align-self: end;
-    position: absolute;
-    @include borde-redondeado(7px);
-    right: 303px;
-    color: #fff;
-    background-color: $color-secundario-regis;
-    border-color: $color-secundario-regis;
-    margin: 5px;
-    @include transicion(transform, $transicion-efecto);
-  }
-  
-  .nosotros-index button:hover {
-    transform: scale(1.1) translateX(10px);
-  }
+.muestra-inicio img {
+  width: 100%;
+  height: 610px;
+  margin: 2px 0 0 0;
+  opacity: 0.89;
+}
 
-  /*-------*/
-  /*SECCION DE BENEFICIOS (INICIO)*/
-  /*-------*/
+.muestra-inicio h2 {
+  font-family: $fuente-decorativa;
+  font-weight: 400;
+  position: absolute;
+  color: $color-secundario-regis;
+  font-size: 140px;
+  text-shadow: 7px 6px 12px rgba(0, 0, 0, 0.71);
+  left: 258px;
+  top: 227px;
+  margin: 17px;
+}
 
+.muestra-inicio p {
+  font-family: $fuente-principal;
+  font-weight: 500;
+  position: absolute;
+  color: $color-secundario-regis;
+  font-size: 27px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.71);
+  right: 60px;
+  top: 407px;
+  letter-spacing: -1px;
+}
 
-.seccion-beneficios{
+/* DESCUBRE TUS PLANTAS */
+.muestras {
+  display: flex;
+  margin: 100px 0;
+  align-items: center;
+}
+
+.muestras h2 {
+  font-family: $fuente-secundaria;
+  font-size: 50px;
+  width: 50%;
+  margin-left: 40px;
+  text-shadow: 10px 10px 10px $color-header;
+  color: $color-borde;
+}
+
+.muestras img {
+  height: 145px;
+}
+
+/* BOTONES DE VER MÁS */
+.boton-ver-mas {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  height: 105px;
+  margin-top: -57px;
+}
+
+.boton-ver-mas button {
+  font-family: $fuente-principal;
+  font-weight: 400;
+  width: 166px;
+  @include borde-redondeado(13px);
+  background: $color-secundario-regis;
+  margin: 0 10px;
+  font-size: large;
+  padding: 6px;
+  color: $color-fondo;
+  border: none;
+  cursor: pointer;
+  @include escala-hover(1.1, 0.4s);
+}
+
+.boton-ver-mas button:hover {
+  background: lighten($color-secundario-regis, 10%);
+}
+
+/* A CERCA DE NOSOTROS */
+.nosotros-index-main2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.nosotros-index-main1 {
+  width: 60%;
+  @include box-shadow(0px, 1px, 20px, -1px, gray);
+  margin-top: 50px;
+  @include borde-redondeado(10px);
+}
+
+.nosotros-index-main1 h2 {
+  text-align: center;
+  width: 100%;
+  padding-top: 17px;
+}
+
+.nosotros-index {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nosotros-index img {
+  width: 350px;
+  height: 350px;
+  @include borde-redondeado(5px);
+}
+
+.nosotros-index p {
+  font-family: $fuente-principal;
+  font-weight: 400;
+  font-size: 25px;
+  margin-left: 40px;
+  height: 270px;
+  margin-bottom: 0;
+}
+
+.nosotros-index button {
+  font-family: $fuente-principal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 50px;
+  width: 125px;
+  align-self: end;
+  position: absolute;
+  @include borde-redondeado(7px);
+  right: 303px;
+  color: $color-fondo;
+  background-color: $color-secundario-regis;
+  border-color: $color-secundario-regis;
+  margin: 5px;
+  @include transicion(transform, $transicion-efecto);
+}
+
+.nosotros-index button:hover {
+  transform: scale(1.1) translateX(10px);
+}
+
+/* SECCION DE BENEFICIOS */
+.seccion-beneficios {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffffff;
+  background-color: $color-fondo;
   padding: 55px;
-  border: 1px solid #ffffff;
+  border: 1px solid $color-fondo;
   margin-top: 100px;
   margin-bottom: 60px;
 }
 
-.beneficio{
+.beneficio {
   text-align: center;
   max-width: 300px;
 }
 
-.beneficio img{
+.beneficio img {
   width: 50px;
   height: 50px;
   margin: 10px;
 }
 
-.beneficio h3{
+.beneficio h3 {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: $color-borde;
   margin-bottom: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $fuente-principal;
   font-weight: 600;
 }
 
-.beneficio p{
+.beneficio p {
   font-size: 13px;
-  color: #666;
-  font-family: "Poppins", sans-serif;
+  color: $color-secundario-regis;
+  font-family: $fuente-secundaria;
   font-weight: 500;
-  font-style: normal;
 }
 
-.divisor{
+.divisor {
   width: 1px;
   height: 50px;
   background-color: #eddcd9;
   margin: 0 20px;
 }
 
-
-/*-------*/
-/*SECCION "TE APASIONA LA NATURALEZA"*/
-/*-------*/
-
-
-.pasion-nat h2{
-  font-family: "Poppins", sans-serif;
+/* SECCION "TE APASIONA LA NATURALEZA" */
+.pasion-nat h2 {
+  font-family: $fuente-secundaria;
   font-style: normal;
   font-weight: 300;
   font-size: 50px;
-  text-shadow: 10px 10px 10px #82dae5;
+  text-shadow: 10px 10px 10px $color-header;
   margin-top: 60px;
   text-align: center;
   margin-bottom: 4px;
 }
-.pasion-nat h3{
-  font-family: "Poppins", sans-serif;
+
+.pasion-nat h3 {
+  font-family: $fuente-secundaria;
   font-style: normal;
   font-weight: lighter;
   font-size: 30px;
