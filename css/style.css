@@ -924,6 +924,9 @@ footer {
 /* RESOLUCION RESPONSIVE "NOSOTROS" */
 /*-------*/
 @media (max-width: 425px) {
+  html {
+    overflow-x: hidden;
+  }
   body {
     overflow-x: hidden;
   }
