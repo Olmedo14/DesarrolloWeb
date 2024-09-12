@@ -469,7 +469,7 @@ footer {
   align-self: end;
   position: absolute;
   border-radius: 7px;
-  right: 303px;
+  right: 40px;
   color: #ffffff;
   background-color: #1c346a;
   border-color: #1c346a;
@@ -924,6 +924,29 @@ footer {
 /* RESOLUCION RESPONSIVE "NOSOTROS" */
 /*-------*/
 @media (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
+  .whatsapp-icon {
+    bottom: 10px;
+    right: 10px;
+  }
+  .whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .navbar {
+    position: relative;
+    z-index: 1000;
+  }
+  .navbar-toggler {
+    z-index: 1100;
+  }
+  .navbar-collapse {
+    z-index: 1050;
+  }
   .acordeon-main {
     flex-direction: column;
     align-items: center;
@@ -992,6 +1015,7 @@ footer {
   .container {
     justify-content: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
   }
   .nuestros-prod h2 {
     text-align: center;
@@ -1015,7 +1039,7 @@ footer {
     margin-top: 30px;
   }
   .nosotros-index button {
-    right: 140px;
+    right: 62px;
   }
   .pasion-nat h3 {
     margin-top: 20px;
@@ -1025,6 +1049,19 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+  .main-container h2 {
+    text-align: center;
+    font-size: 32px;
+    border: none;
+    text-shadow: 10px 10px 10px rgba(73, 112, 219, 0.5);
+  }
+  .boton-ver-mas {
+    height: 75px;
+    padding: 0px;
+  }
+  .acordeon-main img {
+    margin-bottom: 100px;
   }
 }
 
