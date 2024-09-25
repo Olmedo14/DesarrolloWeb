@@ -80,25 +80,18 @@
     background-color: $color-boton-carrito-hover;
   }
   
-  /* SECCION CARRITO DE COMPRAS */
-  .cart {
-    background-color: $color-producto-bg;
-    border: 1px solid $color-producto-borde;
-    @include borde-redondeado(8px);
-    padding: 16px;
-    width: 300px;
-    text-align: center;
+  .banner-terrarios img{
+    width: 100%;
+    height: 430px;
+    border: solid black 2px;
   }
-  
-  .cart h2 {
-    margin-top: 0;
+  .banner-kokedamas img {
+    width: 100%;
+    height: 430px;
+    border: solid black 2px;
   }
-  
-  #cartItems {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #cartItems li {
-    margin: 5px 0;
+  .banner-extras img{
+    width: 100%;
+    height: 430px;
+    border: solid black 2px;
   }

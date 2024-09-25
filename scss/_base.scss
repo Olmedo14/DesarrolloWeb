@@ -62,6 +62,21 @@ $color-secundario-regis: #1c346a;
   box-shadow: $x $y $blur $spread $color;
 }
 
+@mixin borde-redondeado($radio: 5px) {
+  border-radius: $radio;
+}
+
+@mixin transicion($propiedad, $tiempo: 0.4s) {
+  transition: $propiedad $tiempo;
+}
+
+@mixin escala-hover($escala: 1.1, $tiempo: 0.4s) {
+  &:hover {
+      transform: scale($escala);
+      @include transicion(transform, $tiempo);
+  }
+}
+
 /* ESTILOS BASE */
 /* FONDO */
 header {
